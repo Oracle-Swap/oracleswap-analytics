@@ -107,7 +107,7 @@ export const toWeeklyDate = (date) => {
 }
 
 export function getTimestampsForChanges() {
-  const utcCurrentTime = dayjs()
+  const utcCurrentTime = dayjs().subtract(21, 'day')
   const t1 = utcCurrentTime.subtract(1, 'day').startOf('minute').unix()
   const t2 = utcCurrentTime.subtract(2, 'day').startOf('minute').unix()
   const tWeek = utcCurrentTime.subtract(1, 'week').startOf('minute').unix()
@@ -303,10 +303,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://etherscan.io/tx/${tx}/`,
-  showAddress: (address) => `https://www.etherscan.io/address/${address}/`,
-  showToken: (address) => `https://www.etherscan.io/token/${address}/`,
-  showBlock: (block) => `https://etherscan.io/block/${block}/`,
+  showTransaction: (tx) => `https://songbird-explorer.flare.network/tx/${tx}/`,
+  showAddress: (address) => `https://songbird-explorer.flare.network/address/${address}/`,
+  showToken: (address) => `https://songbird-explorer.flare.network/token/${address}/`,
+  showBlock: (block) => `https://songbird-explorer.flare.network/block/${block}/`,
 }
 
 export const formatTime = (unix) => {
