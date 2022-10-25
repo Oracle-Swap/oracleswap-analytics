@@ -40,16 +40,16 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://app.uniswap.org/#/` +
+      `https://dex.oracleswap.io/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'ETH' : token0Address}/${'ETH'}`
+      `/${token0Address === '0x02f0826ef6ad107cfc861152b32b52fd11bab9ed' ? 'ETH' : token0Address}/${'ETH'}`
     )
   } else {
     return (
-      `https://app.uniswap.org/#/` +
+      `https://dex.oracleswap.io/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'ETH' : token0Address}/${
-        token1Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'ETH' : token1Address
+      `/${token0Address === '0x02f0826ef6ad107cfc861152b32b52fd11bab9ed' ? 'ETH' : token0Address}/${
+        token1Address === '0x02f0826ef6ad107cfc861152b32b52fd11bab9ed' ? 'ETH' : token1Address
       }`
     )
   }
@@ -57,20 +57,20 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://app.uniswap.org/#/swap?inputCurrency=${token0Address}`
+    return `https://dex.oracleswap.io/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://app.uniswap.org/#/swap?inputCurrency=${
-      token0Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'ETH' : token0Address
-    }&outputCurrency=${token1Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'ETH' : token1Address}`
+    return `https://dex.oracleswap.io/swap?inputCurrency=${
+      token0Address === '0x02f0826ef6ad107cfc861152b32b52fd11bab9ed' ? 'ETH' : token0Address
+    }&outputCurrency=${token1Address === '0x02f0826ef6ad107cfc861152b32b52fd11bab9ed' ? 'ETH' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://app.uniswap.org/#/uni/ETH/${token0Address}`
+  return `https://dex.oracleswap.io/uni/ETH/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://app.uniswap.org/#/uni'
+  let baseUniswapUrl = 'https://dex.oracleswap.io/uni'
   if (!linkVariable) {
     return baseUniswapUrl
   }
