@@ -39,7 +39,7 @@ const theme = (darkMode, color) => ({
   bg3: darkMode ? '#40444F' : '#EDEEF2',
   bg4: darkMode ? '#565A69' : '#CED0D9',
   bg5: darkMode ? '#565A69' : '#888D9B',
-  bg6: darkMode ? '#000' : '#FFFFFF',
+  bg6: darkMode ? '#0d0415' : '#FFFFFF',
 
   //specialty colors
   modalBG: darkMode ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.6)',
@@ -156,9 +156,11 @@ export const ThemedBackground = styled.div`
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://rsms.me/inter/inter.css');
-  html { font-family: 'Inter', sans-serif; }
+  /* html { font-family: 'Inter', sans-serif; } */
+  html { font-family: "DM Sans",-apple-system,system-ui,BlinkMacSystemFont,"Helvetica Neue","Helvetica",sans-serif; }
   @supports (font-variation-settings: normal) {
-    html { font-family: 'Inter var', sans-serif; }
+    /* html { font-family: 'Inter var', sans-serif; } */
+    html { font-family: "DM Sans",-apple-system,system-ui,BlinkMacSystemFont,"Helvetica Neue","Helvetica",sans-serif; }
   }
   
   html,
