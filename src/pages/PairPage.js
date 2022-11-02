@@ -506,7 +506,7 @@ function PairPage({ pairAddress, history }) {
                       external
                       href={'https://songbird-explorer.flare.network/address/' + pairAddress}
                     >
-                      View on Etherscan ↗
+                      View on Songbird Explorer ↗
                     </Link>
                   </ButtonLight>
                 </TokenDetailsLayout>

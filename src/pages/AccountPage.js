@@ -186,7 +186,7 @@ function AccountPage({ account }) {
                 href={'https://songbird-explorer.flare.network/address/' + account}
                 target="_blank"
               >
-                <TYPE.main fontSize={14}>View on Etherscan</TYPE.main>
+                <TYPE.main fontSize={14}>View on Songbird Explorer</TYPE.main>
               </Link>
             </span>
             <AccountWrapper>

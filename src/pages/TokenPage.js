@@ -426,7 +426,7 @@ function TokenPage({ address, history }) {
                       external
                       href={'https://songbird-explorer.flare.network/address/' + address}
                     >
-                      View on Etherscan ↗
+                      View on Songbird Explorer ↗
                     </Link>
                   </ButtonLight>
                 </TokenDetailsLayout>
