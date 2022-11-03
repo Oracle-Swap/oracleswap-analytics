@@ -115,6 +115,11 @@ function App() {
             </WarningBanner>
           </WarningWrapper>
         )}
+        <WarningWrapper>
+          <WarningBanner>
+            The past data may not be 100% accurate because it did not reflect the actual Songbird price at that time.
+          </WarningBanner>
+        </WarningWrapper>
         {globalData &&
         Object.keys(globalData).length > 0 &&
         globalChartData &&
