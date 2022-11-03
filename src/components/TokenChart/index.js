@@ -197,26 +197,28 @@ const TokenChart = ({ address, color, base }) => {
               </AutoRow>
             )}
           </AutoColumn>
-          <AutoRow justify="flex-end" gap="6px" align="flex-start">
-            <OptionButton
-              active={timeWindow === timeframeOptions.WEEK}
-              onClick={() => setTimeWindow(timeframeOptions.WEEK)}
-            >
-              1W
-            </OptionButton>
-            <OptionButton
-              active={timeWindow === timeframeOptions.MONTH}
-              onClick={() => setTimeWindow(timeframeOptions.MONTH)}
-            >
-              1M
-            </OptionButton>
-            <OptionButton
-              active={timeWindow === timeframeOptions.ALL_TIME}
-              onClick={() => setTimeWindow(timeframeOptions.ALL_TIME)}
-            >
-              All
-            </OptionButton>
-          </AutoRow>
+          <AutoColumn>
+            <AutoRow justify="flex-end" gap="6px" align="flex-start">
+              <OptionButton
+                active={timeWindow === timeframeOptions.WEEK}
+                onClick={() => setTimeWindow(timeframeOptions.WEEK)}
+              >
+                1W
+              </OptionButton>
+              <OptionButton
+                active={timeWindow === timeframeOptions.MONTH}
+                onClick={() => setTimeWindow(timeframeOptions.MONTH)}
+              >
+                1M
+              </OptionButton>
+              <OptionButton
+                active={timeWindow === timeframeOptions.ALL_TIME}
+                onClick={() => setTimeWindow(timeframeOptions.ALL_TIME)}
+              >
+                All
+              </OptionButton>
+            </AutoRow>
+          </AutoColumn>
         </RowBetween>
       )}
       {chartFilter === CHART_VIEW.LIQUIDITY && chartData && (
