@@ -117,7 +117,7 @@ function App() {
         )}
         <WarningWrapper>
           <WarningBanner>
-            The past data may not be 100% accurate because it did not reflect the actual Songbird price at that time.
+            The past data for Token USD values may not be 100% accurate because it did not reflect the actual Songbird price at that time. Price data prior to 10/01/22 may be off by approximately 1.5x-2x for Token USD Price. For example, to calculate the actual USD price, reference the WSGB/ORACLE pair ratio and check the SGB price for that day.
           </WarningBanner>
         </WarningWrapper>
         {globalData &&
