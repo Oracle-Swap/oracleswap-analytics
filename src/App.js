@@ -113,6 +113,7 @@ function App() {
             <WarningBanner>
               {`Warning: The data on this site has only synced to Songbird block ${latestBlock} (out of ${headBlock}). Please check back soon.`}
             </WarningBanner>
+            <a href="https://www.geckoterminal.com/songbird/oracleswap/pools">🦎Check Geckoterminal Charts📈</a>
           </WarningWrapper>
         )}
         <WarningWrapper>
@@ -121,9 +122,9 @@ function App() {
           </WarningBanner>
         </WarningWrapper>
         {globalData &&
-        Object.keys(globalData).length > 0 &&
-        globalChartData &&
-        Object.keys(globalChartData).length > 0 ? (
+          Object.keys(globalData).length > 0 &&
+          globalChartData &&
+          Object.keys(globalChartData).length > 0 ? (
           <BrowserRouter>
             {/* <Route component={GoogleAnalyticsReporter} /> */}
             <Switch>
