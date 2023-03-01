@@ -112,8 +112,12 @@ function App() {
           <WarningWrapper>
             <WarningBanner>
               {`Warning: The data on this site has only synced to Songbird block ${latestBlock} (out of ${headBlock}). Please check back soon.`}
+              <div>
+                <Center>
+                  <a href="https://www.geckoterminal.com/songbird/oracleswap/pools">🦎Check Geckoterminal Charts📈</a>
+                </Center>
+              </div>
             </WarningBanner>
-            <a href="https://www.geckoterminal.com/songbird/oracleswap/pools">🦎Check Geckoterminal Charts📈</a>
           </WarningWrapper>
         )}
         <WarningWrapper>
